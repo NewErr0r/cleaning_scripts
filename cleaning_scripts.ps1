@@ -6,7 +6,7 @@ $InProfilesCleanPathsArr = '\AppData\Local\Temp\*', '\AppData\Local\*.auc', '\Ap
 
 # пути в профилях для очистки
 $Profiles = Get-ChildItem (Get-ItemProperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList').ProfilesDirectory -Exclude 'Administrator', 'Setup', 'Public', 'All Users', 'Default User'
-#извлекли из реестра местоположение профилей, сформировали список
+# извлекли из реестра местоположение профилей, сформировали список
 
 ForEach ($Path in $OtherCleanPathsArr) {
 Remove-Item -Path $Path -Recurse -Force -ErrorAction SilentlyContinue
