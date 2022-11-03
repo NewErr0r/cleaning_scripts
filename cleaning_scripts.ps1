@@ -1,7 +1,7 @@
 # явно прописаны пути к основным известным временным каталогам, есть возможность добавить в эту строку пути к каким-то СВОИМ каталогам, которые также требуют периодической очистки
 $OtherCleanPathsArr = 'C:\Temp\*', 'C:\Windows\Temp\*', 'C:\swsetup'
 
-#системные пути для очистки
+# системные пути для очистки
 $InProfilesCleanPathsArr = '\AppData\Local\Temp\*', '\AppData\Local\*.auc', '\AppData\Local\Microsoft\Terminal Server Client\Cache\*', '\AppData\Local\Microsoft\Windows\Temporary Internet Files\*', '\AppData\Local\Microsoft\Windows\WER\ReportQueue\*', '\AppData\Local\Microsoft\Windows\Explorer\*'
 
 # пути в профилях для очистки
